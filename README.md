@@ -1,8 +1,8 @@
-Role Name
+Ansible Role | Create account
 =========
-[![Build Status](https://travis-ci.org/arnobirchler/ansible-role-template.svg?branch=master)](https://travis-ci.org/arnobirchler/ansible-role-template)
+[![Build Status](https://travis-ci.org/arnobirchler/ansible-role-create-account.svg?branch=master)](https://travis-ci.org/arnobirchler/ansible-role-create-account)
 
-Empty role with travis-ci configuration
+create account role with travis-ci configuration
 
 Requirements
 ------------
@@ -12,7 +12,10 @@ No requierements needed
 Role Variables
 --------------
 
-No variables needed.
+```
+- user: scott
+- sudoer: deployer
+```
 
 Dependencies
 ------------

@@ -3,7 +3,8 @@
 
   vars:
     gitlab_restart_handler_failed_when: false
-    file: "test"
+    sudoer: "deployer"
+    user: "web"
 
   pre_tasks:
     - name: Update apt cache.

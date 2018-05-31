@@ -1,7 +1,15 @@
 ---
 # tasks file for ansible-role-create-account 
-- name: "FILE | create a file"
-  file:
-    path: "./{{ file }}.txt"
-    state: touch
+- name: "USER | Create {{ user }}"
+  user:
+    name: "{{ user }}"
+    groups:
+    - www-data
+    shell: /bin/bash
+- name: "USER | Create {{ sudoer }}"
+  user:
+    name: "{{ sudoer }}"
+    groups:
+    - sudo
+    shell: /bin/bash
   
